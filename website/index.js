@@ -6,13 +6,14 @@ import ColorBox from './components/ColorBox.vue'
 
 new Docute({
   target: 'app',
-  title: 'GOBASE',
+  title: 'GO BASE',
+  logo: '<img src="https://s3-ap-northeast-1.amazonaws.com/gobase.io/images/logo/gobase_logo_619x200.png" style="margin-top: 10px; height: 50px;" />',
   highlight: ['typescript', 'bash', 'json', 'markdown', 'javascript'],
   plugins: [
     process.env.NODE_ENV === 'production' && googleAnalytics('UA-54857209-11')
   ].filter(Boolean),
-  editLinkBase: 'https://github.com/egoist/docute/tree/master/website/docs',
-  editLinkText: 'Edit this page on GitHub',
+  // editLinkBase: 'https://github.com/egoist/docute/tree/master/website/docs',
+  // editLinkText: 'Edit this page on GitHub',
   router: {
     mode: 'history'
   },
@@ -222,89 +223,44 @@ new Docute({
       ]
     },
     '/ja/': {
-      language: 'Japanese',
-      editLinkText: 'GitHub 上で編集',
+      language: '日本語',
+      // editLinkText: 'GitHub 上で編集',
       nav: [
         {
-          title: '首页',
+          title: 'Home',
           link: '/ja/'
         },
         {
           title: 'GitHub',
-          link: 'https://github.com/egoist/docute'
+          link: 'https://github.com/gobase/gobase-docs'
         }
       ],
       sidebar: [
         {
-          title: '指南',
+          title: 'GO! Wallet連携',
           children: [
             {
-              title: '介绍',
-              link: '/zh'
+              title: '署名',
+              link: '/ja/web3#署名'
             },
             {
-              title: '自定义',
-              link: '/zh/guide/customization'
-            },
-            {
-              title: 'Markdown 功能',
-              link: '/zh/guide/markdown-features'
-            },
-            {
-              title: '在 Markdown 中使用 Vue',
-              link: '/zh/guide/use-vue-in-markdown'
-            },
-            {
-              title: '国际化',
-              link: '/zh/guide/internationalization'
-            },
-            {
-              title: '插件',
-              link: '/zh/guide/plugin'
-            },
-            {
-              title: '部署',
-              link: '/zh/guide/deployment'
+              title: '送金',
+              link: '/ja/web3#送金'
             }
           ]
         },
         {
-          title: '进阶',
+          title: 'API',
           children: [
             {
-              title: '使用打包工具',
-              link: '/zh/guide/use-with-bundlers'
+              title: '認証',
+              link: '/ja/api/authentication'
             },
             {
-              title: '离线支持',
-              link: '/zh/guide/offline-support'
+              title: 'GP付与',
+              link: '/ja/api/gp'
             }
           ]
-        },
-        {
-          title: '参考',
-          children: [
-            {
-              title: '配置项',
-              link: '/zh/options'
-            },
-            {
-              title: '内置组件',
-              link: '/zh/builtin-components'
-            },
-            {
-              title: '插件 API',
-              link: '/zh/plugin-api'
-            }
-          ]
-        },
-        {
-          title: '致谢',
-          link: '/zh/credits'
-        },
-        {
-          title: '放屁',
-          link: '/helo'
         }
       ]
     }
@@ -315,19 +271,19 @@ new Docute({
   </div>
   `,
   banner: {
-    template: html`
-      <div class="docute-banner">
-        <note :label="false"
-          >バナーをここに書く
-          <a href="https://go-wallet.app" target="_blank"
-            >Go! Wallet <ExternalLinkIcon /></a
-          >.</note
-        >
-      </div>
-    `,
-    components: {
+    // template: html`
+    //   <div class="docute-banner">
+    //     <note :label="false"
+    //       >バナーをここに書く
+    //       <a href="https://go-wallet.app" target="_blank"
+    //         >Go! Wallet <ExternalLinkIcon /></a
+    //       >.</note
+    //     >
+    //   </div>
+    // `,
+    // components: {
       
-    }
+    // }
   }
 })
 
