@@ -139,8 +139,58 @@ new Docute({
     '/': {
       language: 'English'
     },
+    '/ja/': {
+      language: '日本語',
+      // editLinkText: 'GitHub 上で編集',
+      nav: [
+        {
+          title: 'ホーム',
+          link: '/ja/'
+        },
+        {
+          title: '開発者ページ',
+          link: 'https://developer.gobase.io'
+        }
+      ],
+      sidebar: [
+        {
+          title: 'GO! Wallet連携',
+          children: [
+            {
+              title: '署名',
+              link: '/ja/wallet/web3#署名'
+            },
+            {
+              title: '送金',
+              link: '/ja/wallet/web3#送金'
+            },
+            {
+              title: 'DAppsサンプル',
+              link: '/ja/wallet/web3#dappsサンプル'
+            }
+          ]
+        },
+        {
+          title: 'API',
+          children: [
+            {
+              title: '認証',
+              link: '/ja/api/authentication'
+            },
+            {
+              title: 'プッシュ通知',
+              link: '/ja/api/push'
+            },
+            {
+              title: 'GP付与',
+              link: '/ja/api/gp'
+            }
+          ]
+        }
+      ]
+    },
     '/zh/': {
-      language: 'Chinese',
+      language: '中文',
       editLinkText: '在 GitHub 上编辑此页',
       nav: [
         {
@@ -148,8 +198,8 @@ new Docute({
           link: '/zh/'
         },
         {
-          title: 'GitHub',
-          link: 'https://github.com/egoist/docute'
+          title: '开发者',
+          link: 'https://developer.gobase.io'
         }
       ],
       sidebar: [
@@ -219,48 +269,6 @@ new Docute({
         {
           title: '致谢',
           link: '/zh/credits'
-        }
-      ]
-    },
-    '/ja/': {
-      language: '日本語',
-      // editLinkText: 'GitHub 上で編集',
-      nav: [
-        {
-          title: 'Home',
-          link: '/ja/'
-        },
-        {
-          title: 'GitHub',
-          link: 'https://github.com/gobase/gobase-docs'
-        }
-      ],
-      sidebar: [
-        {
-          title: 'GO! Wallet連携',
-          children: [
-            {
-              title: '署名サンプル',
-              link: '/ja/web3#署名'
-            },
-            {
-              title: '送金サンプル',
-              link: '/ja/web3#送金'
-            }
-          ]
-        },
-        {
-          title: 'API',
-          children: [
-            {
-              title: '認証',
-              link: '/ja/api/authentication'
-            },
-            {
-              title: 'GP付与',
-              link: '/ja/api/gp'
-            }
-          ]
         }
       ]
     }

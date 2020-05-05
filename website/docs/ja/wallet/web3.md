@@ -1,8 +1,5 @@
 # GO! Wallet連携
 
-サンプルアプリはこちらにあります。
-https://dapps-mimic.gobase.io/
-
 ## 署名
 web3.jsを読み込みます。 
 ```html
@@ -12,6 +9,7 @@ web3.jsを読み込みます。
     <title>DApps</title>
     <!-- web3 -->
     <script type="text/javascript" src='/js/web3.js'></script>
+    <script type="text/javascript" src='/js/main.js'></script>
   </head>
   <body>
     <a onclick="personalSign();">Sign</a>
@@ -20,7 +18,9 @@ web3.jsを読み込みます。
 ```
 
 プロバイダーからweb3を生成して署名処理を行う。
+
 ```js
+// js/main.js
 async function setupWeb3() {
   try {
     let currentProvider = null;
@@ -75,6 +75,7 @@ async function personalSign() {
 ## 送金
 送金サンプル
 ```js
+// js/main.js
 async function sendTransaction(to, eth, callback) {
   try {
     let { web3, network, account } = await setupWeb3();
@@ -90,3 +91,8 @@ async function sendTransaction(to, eth, callback) {
   }
 };
 ```
+
+## DAppsサンプル
+
+サンプルページはこちらにあります。
+https://dapps-mimic.gobase.io/
