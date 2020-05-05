@@ -7,7 +7,7 @@ import ColorBox from './components/ColorBox.vue'
 new Docute({
   target: 'app',
   title: 'GO BASE',
-  logo: '<img src="https://s3-ap-northeast-1.amazonaws.com/gobase.io/images/logo/gobase_logo_619x200.png" style="margin-top: 10px; height: 50px;" />',
+  logo: '<img src="https://s3-ap-northeast-1.amazonaws.com/gobase.io/images/logo/gobase_logo_transparent_619x200.png" style="margin-top: 10px; height: 50px;" />',
   highlight: ['typescript', 'bash', 'json', 'markdown', 'javascript'],
   plugins: [
     process.env.NODE_ENV === 'production' && googleAnalytics('UA-54857209-11')
@@ -240,11 +240,11 @@ new Docute({
           title: 'GO! Wallet連携',
           children: [
             {
-              title: '署名',
+              title: '署名サンプル',
               link: '/ja/web3#署名'
             },
             {
-              title: '送金',
+              title: '送金サンプル',
               link: '/ja/web3#送金'
             }
           ]

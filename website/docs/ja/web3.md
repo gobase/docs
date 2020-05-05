@@ -4,7 +4,22 @@
 https://dapps-mimic.gobase.io/
 
 ## 署名
+web3.jsを読み込みます。 
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DApps</title>
+    <!-- web3 -->
+    <script type="text/javascript" src='/js/web3.js'></script>
+  </head>
+  <body>
+    <a onclick="personalSign();">Sign</a>
+  </body>
+</html>
+```
 
+プロバイダーからweb3を生成して署名処理を行う。
 ```js
 async function setupWeb3() {
   try {
@@ -58,6 +73,7 @@ async function personalSign() {
 ```
 
 ## 送金
+送金サンプル
 ```js
 async function sendTransaction(to, eth, callback) {
   try {
