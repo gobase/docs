@@ -72,48 +72,15 @@ new Docute({
   ],
   sidebar: [
     {
-      title: 'Go! Wallet連携',
+      title: 'Go! Wallet Integration',
       children: [
         {
-          title: '紹介',
-          link: '/wallet/index'
+          title: 'Signature',
+          link: '/wallet/web3#signature'
         },
         {
-          title: '',
-          link: '/guide/customization'
-        },
-        {
-          title: 'Markdown Features',
-          link: '/guide/markdown-features'
-        },
-        {
-          title: 'Use Vue in Markdown',
-          link: '/guide/use-vue-in-markdown'
-        },
-        {
-          title: 'Internationalization',
-          link: '/guide/internationalization'
-        },
-        {
-          title: 'Plugin',
-          link: '/guide/plugin'
-        },
-        {
-          title: 'Deployment',
-          link: '/guide/deployment'
-        }
-      ]
-    },
-    {
-      title: '認証',
-      children: [
-        {
-          title: 'Use With Bundlers',
-          link: '/guide/use-with-bundlers'
-        },
-        {
-          title: 'Offline Support',
-          link: '/guide/offline-support'
+          title: 'Send',
+          link: '/wallet/web3#send'
         }
       ]
     },
@@ -121,16 +88,16 @@ new Docute({
       title: 'API',
       children: [
         {
-          title: 'Options',
-          link: '/options'
+          title: 'Authentication',
+          link: '/api/authentication'
         },
         {
-          title: 'Built-in Components',
-          link: '/builtin-components'
+          title: 'Push notification',
+          link: '/api/push'
         },
         {
-          title: 'Plugin API',
-          link: '/plugin-api'
+          title: 'GP API',
+          link: '/api/gp'
         }
       ]
     }
@@ -191,7 +158,7 @@ new Docute({
     },
     '/zh/': {
       language: '中文',
-      editLinkText: '在 GitHub 上编辑此页',
+      // editLinkText: '在 GitHub 上编辑此页',
       nav: [
         {
           title: '首页',
@@ -204,71 +171,38 @@ new Docute({
       ],
       sidebar: [
         {
-          title: '指南',
+          title: 'GO! Wallet链接',
           children: [
             {
-              title: '介绍',
-              link: '/zh'
+              title: '署名',
+              link: '/zh/wallet/web3#署名'
             },
             {
-              title: '自定义',
-              link: '/zh/guide/customization'
+              title: '送金',
+              link: '/zh/wallet/web3#送金'
             },
             {
-              title: 'Markdown 功能',
-              link: '/zh/guide/markdown-features'
-            },
-            {
-              title: '在 Markdown 中使用 Vue',
-              link: '/zh/guide/use-vue-in-markdown'
-            },
-            {
-              title: '国际化',
-              link: '/zh/guide/internationalization'
-            },
-            {
-              title: '插件',
-              link: '/zh/guide/plugin'
-            },
-            {
-              title: '部署',
-              link: '/zh/guide/deployment'
+              title: 'DApps例子',
+              link: '/zh/wallet/web3#dapps例子'
             }
           ]
         },
         {
-          title: '进阶',
+          title: 'API',
           children: [
             {
-              title: '使用打包工具',
-              link: '/zh/guide/use-with-bundlers'
+              title: '認証',
+              link: '/zh/api/authentication'
             },
             {
-              title: '离线支持',
-              link: '/zh/guide/offline-support'
+              title: 'プッシュ通知',
+              link: '/zh/api/push'
+            },
+            {
+              title: 'GP付与',
+              link: '/zh/api/gp'
             }
           ]
-        },
-        {
-          title: '参考',
-          children: [
-            {
-              title: '配置项',
-              link: '/zh/options'
-            },
-            {
-              title: '内置组件',
-              link: '/zh/builtin-components'
-            },
-            {
-              title: '插件 API',
-              link: '/zh/plugin-api'
-            }
-          ]
-        },
-        {
-          title: '致谢',
-          link: '/zh/credits'
         }
       ]
     }
