@@ -15,7 +15,7 @@ new Docute({
   // editLinkBase: 'https://github.com/egoist/docute/tree/master/website/docs',
   // editLinkText: 'Edit this page on GitHub',
   router: {
-    mode: 'abstract'
+    mode: 'hash'
   },
   detectSystemDarkTheme: true,
   darkThemeToggler: true,
