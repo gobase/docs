@@ -6,7 +6,7 @@ module.exports = {
   output: {
     dir: 'website/dist',
     html: {
-      title: 'Docute'
+      title: 'GO BASE'
     }
   },
   publicFolder: path.join(__dirname, '../website/docs'),
