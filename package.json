@@ -8,7 +8,7 @@
     "test": "npm run lint && npm run test:unit",
     "lint": "xo",
     "website": "poi --serve --config build/poi.website.config.js",
-    "build:website": "poi --prod --config build/poi.website.config.js",
+    "build:website": "poi --prod --config build/poi.website.config.js && cp -r website/dist/* docs/",
     "now-build": "npm run build:website",
     "prepublishOnly": "npm run build",
     "commit": "git-cz",
