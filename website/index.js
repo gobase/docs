@@ -14,9 +14,9 @@ new Docute({
   ].filter(Boolean),
   // editLinkBase: 'https://github.com/egoist/docute/tree/master/website/docs',
   // editLinkText: 'Edit this page on GitHub',
-  router: {
-    mode: 'history'
-  },
+  // router: {
+  //   mode: 'history'
+  // },
   detectSystemDarkTheme: true,
   darkThemeToggler: true,
   sourcePath: '/',
