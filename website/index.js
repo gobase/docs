@@ -19,7 +19,7 @@ new Docute({
   },
   detectSystemDarkTheme: true,
   darkThemeToggler: true,
-  sourcePath: '/docs',
+  sourcePath: '/',
   componentMixins: [
     {
       data() {
