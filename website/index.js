@@ -201,7 +201,7 @@ new Docute({
               link: '/zh/api/gp'
             },
             {
-              title: 'プッシュ通知',
+              title: '推送',
               link: '/zh/api/push'
             }
           ]
