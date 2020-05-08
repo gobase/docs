@@ -1,13 +1,14 @@
-# GP付与API
+# プッシュ通知API
 
-GP付与APIは指定したイーサリアムアドレスにGPを付与するAPIです。
+プッシュ通知APIはDApps側で指定したイーサリアムアドレスに対してプッシュ通知を送るAPIです。
 
 ### パラメータ
 
 |  パラメータ    |  型              | 説明                 |
 | ------------ | ---------------- | ------------------- |
 |  addresses   |  string array    | 複数アドレスの配列形式  |
-|  point       |  integer         | 付与するポイント数     |
+|  title       |  object          | json形式title object |
+|  body        | objecet          | json形式body object  |
 
 ### レスポンス
 ```json

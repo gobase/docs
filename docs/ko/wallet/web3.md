@@ -1,7 +1,7 @@
-# GO! Wallet連携
+# GO! Wallet 연결
 
-## 署名
-加载web3.js
+## 서명
+web3.js를로드
 ```html
 <!DOCTYPE html>
 <html>
@@ -17,7 +17,7 @@
 </html>
 ```
 
-从Provider生成web3，并做签名
+Provider로 web3를 생성하고 서명 처리를한다.
 
 ```js
 // js/main.js
@@ -72,8 +72,8 @@ async function personalSign() {
 };
 ```
 
-## 送金
-送金例子
+## 송금
+송금예
 ```js
 // js/main.js
 async function sendTransaction(to, eth, callback) {
@@ -92,8 +92,8 @@ async function sendTransaction(to, eth, callback) {
 };
 ```
 
-## DApps例子
+## DApps예
 
-可以参考一下例子
+이 예를 참고로 할수있다.
 
 https://dapps-mimic.gobase.io/
