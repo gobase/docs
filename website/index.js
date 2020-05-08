@@ -7,13 +7,11 @@ import ColorBox from './components/ColorBox.vue'
 new Docute({
   target: 'app',
   title: 'GO BASE',
-  logo: '<img src="https://s3-ap-northeast-1.amazonaws.com/gobase.io/images/logo/gobase_logo_transparent_619x200.png" style="margin-top: 10px; height: 50px;" />',
+  // logo: '<img src="https://s3-ap-northeast-1.amazonaws.com/gobase.io/images/logo/gobase_logo_transparent_619x200.png" style="margin-top: 10px; height: 50px;" />',
   highlight: ['typescript', 'bash', 'json', 'markdown', 'javascript'],
   plugins: [
-    process.env.NODE_ENV === 'production' && googleAnalytics('UA-54857209-11')
+    process.env.NODE_ENV === 'production' && googleAnalytics('UA-165946232-1')
   ].filter(Boolean),
-  // editLinkBase: 'https://github.com/egoist/docute/tree/master/website/docs',
-  // editLinkText: 'Edit this page on GitHub',
   router: {
     mode: 'hash'
   },
@@ -79,8 +77,12 @@ new Docute({
           link: '/wallet/web3#signature'
         },
         {
-          title: 'Send',
-          link: '/wallet/web3#send'
+          title: 'Send transaction',
+          link: '/wallet/web3#send-transaction'
+        },
+        {
+          title: 'DApps example',
+          link: '/wallet/web3#dapps-example'
         }
       ]
     },
@@ -92,12 +94,12 @@ new Docute({
           link: '/api/authentication'
         },
         {
-          title: 'Push notification',
-          link: '/api/push'
+          title: 'Granting GP',
+          link: '/api/gp'
         },
         {
-          title: 'GP API',
-          link: '/api/gp'
+          title: 'Push notification',
+          link: '/api/push'
         }
       ]
     }
@@ -141,23 +143,23 @@ new Docute({
           title: 'API',
           children: [
             {
-              title: '認証',
+              title: '基本認証',
               link: '/ja/api/authentication'
-            },
-            {
-              title: 'プッシュ通知',
-              link: '/ja/api/push'
             },
             {
               title: 'GP付与',
               link: '/ja/api/gp'
+            },
+            {
+              title: 'プッシュ通知',
+              link: '/ja/api/push'
             }
           ]
         }
       ]
     },
     '/zh/': {
-      language: '中文',
+      language: '简体中文',
       // editLinkText: '在 GitHub 上编辑此页',
       nav: [
         {
@@ -191,16 +193,66 @@ new Docute({
           title: 'API',
           children: [
             {
-              title: '認証',
+              title: '基本认证',
               link: '/zh/api/authentication'
+            },
+            {
+              title: '授予GP',
+              link: '/zh/api/gp'
             },
             {
               title: 'プッシュ通知',
               link: '/zh/api/push'
+            }
+          ]
+        }
+      ]
+    },
+    '/ko/': {
+      language: '한국어',
+      // editLinkText: '在 GitHub 上编辑此页',
+      nav: [
+        {
+          title: '홈',
+          link: '/ko/'
+        },
+        {
+          title: '개발자',
+          link: 'https://developer.gobase.io'
+        }
+      ],
+      sidebar: [
+        {
+          title: 'GO! Wallet 연결',
+          children: [
+            {
+              title: '서명',
+              link: '/ko/wallet/web3#서명'
             },
             {
-              title: 'GP付与',
-              link: '/zh/api/gp'
+              title: '송금',
+              link: '/ko/wallet/web3#송금'
+            },
+            {
+              title: 'DApps예',
+              link: '/ko/wallet/web3#dapps예'
+            }
+          ]
+        },
+        {
+          title: 'API',
+          children: [
+            {
+              title: '기본인증',
+              link: '/ko/api/authentication'
+            },
+            {
+              title: 'GP급여',
+              link: '/ko/api/gp'
+            },
+            {
+              title: 'Push알림',
+              link: '/ko/api/push'
             }
           ]
         }

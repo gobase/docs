@@ -1,17 +1,17 @@
-# Authentication
+# 기본인증
 
-Use the API key and API secret issued on the developer page.
+개발자 페이지에서 발행 한 API key와 API secret을 사용합니다.
 
-Include the following information in your HTTP request headers.
+다음 정보를 HTTP 요청 헤더에 포함합니다.
 
-* X-Gobase-Access-Key: The API key issued on the developer page.
-* X-Gobase-Access-Timestamp: Unix Timestamp at request
-* X-Gobase-Access-Signature: Signatures generated on a per-request basis in the following way
+* X-Gobase-Access-Key: 개발자 페이지에서 발행 한 API key
+* X-Gobase-Access-Timestamp: 요청시 Unix Timestamp
+* X-Gobase-Access-Signature: 다음의 방법으로 요청마다 생성 한 서명
 
-`X-Gobase-Access-Signature` is the result of concatenating TIMESTAMP, HTTP method, request path, and request body as strings, and signing HMAC-SHA256 with API secret.
+`X-Gobase-Access-Signature`은 TIMESTAMP, HTTP 메소드, 요청 경로 응답 본문을 문자열로 연결 한 것을, API secret에서 HMAC-SHA256 서명을 한 결과입니다.
 
 ```js
-// Node.js example
+// Node.js 예
 var request = require('request');
 var crypto = require('crypto');
 

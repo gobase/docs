@@ -58,3 +58,7 @@ a {
 .docute-footer {
   padding-top: 60px;
 }
+
+h1.site-title {
+  font-weight: bold !important;
+}

@@ -5,7 +5,7 @@
       :value="$store.getters.currentLocalePath"
       v-slot="{value}"
     >
-      <option disabled>Choose Language</option>
+      <!-- option disabled>Choose Language</option -->
       <option
         v-for="language in languages"
         :value="language.path"

@@ -94,4 +94,5 @@ async function sendTransaction(to, eth, callback) {
 ## DApps example
 
 A example page can be found here.
+
 https://dapps-mimic.gobase.io/

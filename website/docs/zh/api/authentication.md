@@ -1,17 +1,17 @@
-# 認証
+# 基本认证
 
-開発者ページ において発行した API key と API secret を使用します。
+使用开发者页面上发布的API密钥和API秘密。
 
-以下の情報を HTTP リクエストヘッダに含めます。
+在HTTP请求标题中包含以下信息。
 
-* X-Gobase-Access-Key: 開発者ページで発行した API key
-* X-Gobase-Access-Timestamp: リクエスト時の Unix Timestamp
-* X-Gobase-Access-Signature: 以下の方法でリクエストごとに生成した署名
+* X-Gobase-Access-Key: 开发者页面上发布的API密钥
+* X-Gobase-Access-Timestamp: 发请求时的 Unix Timestamp
+* X-Gobase-Access-Signature: 按以下方式每项请求生成的签名
 
-`X-Gobase-Access-Signature` は、TIMESTAMP, HTTP メソッド, リクエストのパス, リクエストボディ を文字列として連結したものを、 API secret で HMAC-SHA256 署名を行った結果です。
+`X-Gobase-Access-Signature` 是将TIMESTAMP、HTTP方法、请求路径和请求体作为字符串串串联起来，然后用API的秘密签署HMAC-SHA256。
 
 ```js
-// Node.js サンプル
+// Node.js 例子
 var request = require('request');
 var crypto = require('crypto');
 
