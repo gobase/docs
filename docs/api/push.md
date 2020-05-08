@@ -1,21 +1,21 @@
 # Push notification
 
-プッシュ通知APIはDApps側で指定したイーサリアムアドレスに対してプッシュ通知を送るAPIです。
+Push Notification API
 
-### パラメータ
+### Parameter
 
-|  パラメータ    |  型              | 説明                 |
+|  Parameter   |  Type            | Description         |
 | ------------ | ---------------- | ------------------- |
 |  addresses   |  string array    | 複数アドレスの配列形式  |
 |  title       |  object          | json形式title object |
 |  body        | objecet          | json形式body object  |
 
-### レスポンス
+### Response
 ```json
 {"error": null, "status": "ok"}
 ```
 
-### CURLサンプル
+### CURL
 ```js
 curl -XPOST \
 -H 'Content-Type:application/json' \
@@ -25,4 +25,3 @@ curl -XPOST \
 -d '{"title":[{"lang":"en","text":"title"},{"lang":"ja","text":"タイトル"}],"body":[{"lang":"en","text":"text"},{"lang":"ja","text":"本文"}],"addresses":["0x8238818c3b40f431f38b12fe7ecc210aa2256fde"]}' \
 https://api.gobase.io/v1/push/create
 ```
-
