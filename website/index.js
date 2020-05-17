@@ -189,19 +189,19 @@ new Docute({
       ],
       sidebar: [
         {
-          title: 'GO! Wallet链接',
+          title: 'GO! Wallet 整合',
           children: [
             {
               title: '署名',
-              link: '/zh/wallet/web3#署名'
+              link: '/zh/wallet/signature'
             },
             {
-              title: '送金',
-              link: '/zh/wallet/web3#送金'
+              title: '发送交易',
+              link: '/zh/wallet/transaction'
             },
             {
               title: 'DApps例子',
-              link: '/zh/wallet/web3#dapps例子'
+              link: '/zh/wallet/example'
             }
           ]
         },
@@ -209,7 +209,11 @@ new Docute({
           title: 'API',
           children: [
             {
-              title: '基本认证',
+              title: 'HTTP API',
+              link: '/zh/api/http'
+            },
+            {
+              title: 'API认证',
               link: '/zh/api/authentication'
             },
             {
@@ -217,8 +221,12 @@ new Docute({
               link: '/zh/api/gp'
             },
             {
-              title: '推送',
+              title: 'APP推送',
               link: '/zh/api/push'
+            },
+            {
+              title: '状态码',
+              link: '/zh/api/code'
             }
           ]
         }
