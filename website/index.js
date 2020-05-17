@@ -123,19 +123,19 @@ new Docute({
       ],
       sidebar: [
         {
-          title: 'GO! Wallet連携',
+          title: 'GO! Wallet 連携',
           children: [
             {
               title: '署名',
-              link: '/ja/wallet/web3#署名'
+              link: '/ja/wallet/signature'
             },
             {
               title: '送金',
-              link: '/ja/wallet/web3#送金'
+              link: '/ja/wallet/transaction'
             },
             {
               title: 'DAppsサンプル',
-              link: '/ja/wallet/web3#dappsサンプル'
+              link: '/ja/wallet/example'
             }
           ]
         },
@@ -143,7 +143,11 @@ new Docute({
           title: 'API',
           children: [
             {
-              title: '基本認証',
+              title: 'HTTP API',
+              link: '/ja/api/http'
+            },
+            {
+              title: 'API認証',
               link: '/ja/api/authentication'
             },
             {
@@ -153,7 +157,11 @@ new Docute({
             {
               title: 'プッシュ通知',
               link: '/ja/api/push'
-            }
+            },
+            {
+              title: 'ステータスコード',
+              link: '/ja/api/code'
+            },
           ]
         }
       ]

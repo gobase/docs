@@ -1,6 +1,6 @@
-# 基本認証
+# API認証
 
-開発者ページ において発行した API key と API secret を使用します。
+開発者ページ において発行した API key と API secret を使用します。[開発者ページ](https://developer.gobase.io) から取得可能です。
 
 以下の情報を HTTP リクエストヘッダに含めます。
 

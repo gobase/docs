@@ -1,5 +1,7 @@
 # GP付与API
 
+GP = GO! Wallet Point
+
 GP付与APIは指定したイーサリアムアドレスにGPを付与するAPIです。
 
 ### パラメータ

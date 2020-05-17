@@ -96,4 +96,4 @@ async function sendTransaction(to, eth, callback) {
 
 こちらのサンプルページを参考にできます。
 
-https://dapps-mimic.gobase.io/
+https://mimic.gobase.io/
