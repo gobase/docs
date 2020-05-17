@@ -74,21 +74,25 @@ new Docute({
       children: [
         {
           title: 'Signature',
-          link: '/wallet/web3#signature'
+          link: '/wallet/signature'
         },
         {
           title: 'Send transaction',
-          link: '/wallet/web3#send-transaction'
+          link: '/wallet/transaction'
         },
         {
           title: 'DApps example',
-          link: '/wallet/web3#dapps-example'
+          link: '/wallet/example'
         }
       ]
     },
     {
       title: 'API',
       children: [
+        {
+          title: 'HTTP API',
+          link: '/api/http'
+        },
         {
           title: 'Authentication',
           link: '/api/authentication'
@@ -100,7 +104,11 @@ new Docute({
         {
           title: 'Push notification',
           link: '/api/push'
-        }
+        },
+        {
+          title: 'Status Code',
+          link: '/api/code'
+        },
       ]
     }
   ],
