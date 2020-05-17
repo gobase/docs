@@ -2,5 +2,5 @@
 
 開発者向けドキュメントページ
 
-* [GO!Wallet連携](wallet/web3)
+* [GO!Wallet連携](wallet/signature)
 * [HTTP API](api/http)
