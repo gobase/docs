@@ -247,19 +247,19 @@ new Docute({
       ],
       sidebar: [
         {
-          title: 'GO! Wallet 연결',
+          title: 'GO! Wallet 통합',
           children: [
             {
               title: '서명',
-              link: '/ko/wallet/web3#서명'
+              link: '/ko/wallet/signature'
             },
             {
-              title: '송금',
-              link: '/ko/wallet/web3#송금'
+              title: '거례',
+              link: '/ko/wallet/transaction'
             },
             {
               title: 'DApps예',
-              link: '/ko/wallet/web3#dapps예'
+              link: '/ko/wallet/example'
             }
           ]
         },
@@ -267,7 +267,11 @@ new Docute({
           title: 'API',
           children: [
             {
-              title: '기본인증',
+              title: 'HTTP API',
+              link: '/ko/api/http'
+            },
+            {
+              title: 'API인증',
               link: '/ko/api/authentication'
             },
             {
@@ -277,6 +281,10 @@ new Docute({
             {
               title: 'Push알림',
               link: '/ko/api/push'
+            },
+            {
+              title: '상태 코드',
+              link: '/ko/api/code'
             }
           ]
         }
