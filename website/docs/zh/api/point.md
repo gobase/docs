@@ -1,22 +1,22 @@
-# GP 부여
+# GP API
 
 GP = GO!Wallet Point
 
-GP 부여 API는 지정한 Ethereum 주소에 GP를 부여하는 API입니다.
+GP授予API是向指定的多个Ethereum地址授予GP的API。
 
 ### PATH
 ```
-POST /points
+POST /point/send
 ```
 
-### 변수
+### 参数
 
-|  변수         |  형               | 설명                    |
-| ------------ | ---------------- | ---------------------- |
-|  addresses   |  string array    | Ethereum 주소의 배열 형식  |
-|  point       |  integer         | 부여하는 Point수          |
+|  参数         |  类型            |  说明            |
+| ------------ | ---------------- | --------------- |
+|  addresses   |  string array    | 多个地址的数组    |
+|  point       |  integer         | 授予Point数      |
 
-例：
+例:
 ```json
 {
 	"addresses": ["0x7***", "0x8***"],
@@ -24,14 +24,14 @@ POST /points
 }
 ```
 
-### 응밥
+### 响应
 ```json
 Status Code: 200
 
 {"address_count": 2, "point": 100}
 ```
 
-### CURL 예시
+### CURL 例子
 ```bash
 curl -XPOST \
 -H 'Content-Type:application/json' \

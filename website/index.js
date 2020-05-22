@@ -99,7 +99,7 @@ new Docute({
         },
         {
           title: 'Granting GP',
-          link: '/api/gp'
+          link: '/api/point'
         },
         {
           title: 'Push notification',
@@ -160,7 +160,7 @@ new Docute({
             },
             {
               title: 'GP付与',
-              link: '/ja/api/gp'
+              link: '/ja/api/point'
             },
             {
               title: 'プッシュ通知',
@@ -218,7 +218,7 @@ new Docute({
             },
             {
               title: '授予GP',
-              link: '/zh/api/gp'
+              link: '/zh/api/point'
             },
             {
               title: 'APP推送',
@@ -276,7 +276,7 @@ new Docute({
             },
             {
               title: 'GP급여',
-              link: '/ko/api/gp'
+              link: '/ko/api/point'
             },
             {
               title: 'Push알림',

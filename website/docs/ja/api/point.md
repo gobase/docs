@@ -6,7 +6,7 @@ GP付与APIは指定したイーサリアムアドレスにGPを付与するAPI�
 
 ### パス
 ```
-POST /points
+POST /point/send
 ```
 
 ### パラメータ
