@@ -28,8 +28,8 @@ const body = JSON.stringify({
   "point": 100
 });
 
-var text = timestamp + method + path + body;
-var signature = crypto.createHmac('sha256', secret).update(text).digest('hex');
+var message = timestamp + method + path + body;
+var signature = crypto.createHmac('sha256', secret).update(message).digest('hex');
 
 var options = {
   url: EndPointURL + path,
