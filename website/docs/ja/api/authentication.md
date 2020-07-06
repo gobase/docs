@@ -136,7 +136,7 @@ import hashlib
 ENDPOINT_URL='https://api.gobase.io'
 
 def make_hmac_sha256(key, message):
-  signature = hmac.new(bytes(key, 'UTF-8'), bytes(message, 'UTF-8'), digestmod=hashlib.sha256).hexdigest()
+  signature = hmac.new(key.encode('UTF-8'), message.encode('UTF-8'), digestmod=hashlib.sha256).hexdigest()
   return signature
 
 if __name__ == '__main__':
@@ -147,8 +147,9 @@ if __name__ == '__main__':
   method = 'POST'
   path = '/v1/point/send'
   body = {"addresses": ["0x7***", "0x8***"], "point":100}
+  json_body = json.dumps(body)
 
-  message = timestamp + method + path + json.dumps(body)
+  message = timestamp + method + path + json_body
   signature = make_hmac_sha256(api_secret, message)
 
   headers = {
@@ -158,7 +159,7 @@ if __name__ == '__main__':
     'X-Gobase-Access-Signature': signature
   }
 
-  response = requests.post(ENDPOINT_URL + path, headers=headers, data= json.dumps(body).encode("utf-8"))
+  response = requests.post(ENDPOINT_URL + path, headers=headers, data=json_body)
   print(response.status_code)
   print(response.text)
 ```
