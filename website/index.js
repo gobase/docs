@@ -8,7 +8,7 @@ new Docute({
   target: 'app',
   title: 'GO BASE',
   // logo: '<img src="https://s3-ap-northeast-1.amazonaws.com/gobase.io/images/logo/gobase_logo_transparent_619x200.png" style="margin-top: 10px; height: 50px;" />',
-  highlight: ['typescript', 'bash', 'json', 'markdown', 'javascript', 'go'],
+  highlight: ['typescript', 'bash', 'json', 'markdown', 'javascript', 'go', 'python'],
   plugins: [
     process.env.NODE_ENV === 'production' && googleAnalytics('UA-165946232-1')
   ].filter(Boolean),
