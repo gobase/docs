@@ -122,3 +122,42 @@ func makeHMACSha256(msg, secret string) string {
 	return hex.EncodeToString(mac.Sum(nil))
 }
 ```
+
+### Python 예
+```py
+import os
+import time
+import json
+import requests
+import hmac
+import hashlib
+
+ENDPOINT_URL='https://api.gobase.io'
+
+def make_hmac_sha256(key, message):
+  signature = hmac.new(bytes(key, 'UTF-8'), bytes(message, 'UTF-8'), digestmod=hashlib.sha256).hexdigest()
+  return signature
+
+if __name__ == '__main__':
+  api_key = os.environ.get('API_KEY')
+  api_secret = os.environ.get('API_SECRET')
+
+  timestamp= str(int(time.time()))
+  method = 'POST'
+  path = '/v1/point/send'
+  body = {"addresses": ["0x7***", "0x8***"], "point":100}
+
+  message = timestamp + method + path + json.dumps(body)
+  signature = make_hmac_sha256(api_secret, message)
+
+  headers = {
+    'Content-Type': 'application/json',
+    'X-Gobase-Access-Key': api_key,
+    'X-Gobase-Access-Timestamp': timestamp,
+    'X-Gobase-Access-Signature': signature
+  }
+
+  response = requests.post(ENDPOINT_URL + path, headers=headers, data= json.dumps(body).encode("utf-8"))
+  print(response.status_code)
+  print(response.text)
+```
