@@ -12,12 +12,13 @@ POST /nft/{address}/market/{token_id}/buy/stripe/session
 |  パラメータ    |  型              | 説明                                  |
 | ------------ | ---------------- | ------------------------------------- |
 |  to          |  string          | 購入者ETHアドレス                       |
+|  currency    |  string          | usd, jpy                              |
 |  success_url |  string          | Stripe決済成功後のリダイレクトURL   　　　 |
 |  cancel_url  |  string          | Stripe決済キャンセル時のリダイレクトURL    |
 
 例：
 ```json
-{"to": "0x12345...", "success_url": "https://example.com/stripe/success", "cancel_url": "https://example.com/stripe/cancel"}
+{"to": "0x12345...", "currency": "jpy", "success_url": "https://example.com/stripe/success", "cancel_url": "https://example.com/stripe/cancel"}
 ```
 
 ### レスポンス
