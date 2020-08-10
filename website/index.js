@@ -219,6 +219,10 @@ new Docute({
               title: 'Stripeセッション取得',
               link: '/ja/nft/market/stripe_session'
             },
+            {
+              title: 'NFT返品,返金',
+              link: '/ja/nft/market/refund'
+            },
           ]
         }
       ]
