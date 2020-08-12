@@ -228,8 +228,8 @@ new Docute({
               link: '/ja/nft/market/refund'
             },
             {
-              title: 'NFFステータス一覧',
-              link: '/ja/nft/status'
+              title: 'NFTステータス一覧',
+              link: '/ja/nft/market/status'
             },
           ]
         }
