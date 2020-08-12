@@ -200,6 +200,10 @@ new Docute({
               link: '/ja/nft/market/sell_put'
             },
             {
+              title: 'NFT配布、所有者変更',
+              link: '/ja/nft/market/transfer_post'
+            },
+            {
               title: 'ユーザー出品',
               link: '/ja/nft/market/sell_post_user'
             },

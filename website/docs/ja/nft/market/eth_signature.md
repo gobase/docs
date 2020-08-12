@@ -27,5 +27,5 @@ curl -XGET \
 -H 'X-Gobase-Access-Key: ******' \
 -H 'X-Gobase-Access-Signature: ******' \
 -H 'X-Gobase-Access-Timestamp: 1589678198548' \
-https://api.gobase.io/v1/nft/{0x12345...}/markeet/12/buy/eth/signature
+https://api.gobase.io/v1/nft/{0x12345...}/market/12/buy/eth/signature
 ```

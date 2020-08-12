@@ -38,5 +38,5 @@ curl -XPOST \
 -H 'X-Gobase-Access-Signature: ******' \
 -H 'X-Gobase-Access-Timestamp: 1589678198548' \
 -d '{"to": "0x12345...", "success_url": "https://example.com/stripe/success", "cancel_url": "https://example.com/stripe/cancel"}' \
-https://api.gobase.io/v1/nft/{0x12345...}/markeet/12/buy/eth/signature
+https://api.gobase.io/v1/nft/{0x12345...}/market/12/buy/eth/signature
 ```
