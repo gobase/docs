@@ -23,7 +23,10 @@ POST /nft/{address}/market/{token_id}/buy/eth/transaction
 Status Code: 200
 
 {
-  "message": "0x12345..."
+  "error": null,
+  "result": {
+    "message": "0x12345..."
+  }
 }
 ```
 

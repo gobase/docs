@@ -35,7 +35,10 @@ POST /nft/{address}/tokens/create/bulk
 ```json
 Status Code: 200
 
-{"address":"0x12345...","result":"OK"}
+{
+  "result": "OK",
+  "error": null
+}
 ```
 
 ### CURLサンプル

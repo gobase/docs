@@ -16,17 +16,20 @@ GET /nft/{address}/tokens/{token_id}
 Status Code: 200
 
 {
-  "token": {
-    "created": "2020-08-07T05:38:16.989Z",
-    "description": "test2",
-    "image": "https://example.com/image/nft2.png",
-    "name": "test2",
-    "owner": "0x12345...",
-    "status": null,
-    "token_id": 14,
-    "updated": "2020-08-07T05:38:16.989Z",
-    "wei": null
-  }
+  "result": {
+    "token": {
+      "created": "2020-08-07T05:38:16.989Z",
+      "description": "test2",
+      "image": "https://example.com/image/nft2.png",
+      "name": "test2",
+      "owner": "0x12345...",
+      "status": null,
+      "token_id": 14,
+      "updated": "2020-08-07T05:38:16.989Z",
+      "wei": null
+    }
+  },
+  "error": null
 }
 ```
 

@@ -22,7 +22,12 @@ PUT /nft/{address}/market/{token_id}/publisher/sell
 ```json
 Status Code: 200
 
-{"message":"OK"}
+{
+  "error": null,
+  "result": {
+    "message":"OK"
+  }
+}
 ```
 
 ### CURLサンプル

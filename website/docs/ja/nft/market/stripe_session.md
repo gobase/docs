@@ -18,7 +18,12 @@ POST /nft/{address}/market/{token_id}/buy/stripe/session
 
 例：
 ```json
-{"to": "0x12345...", "currency": "jpy", "success_url": "https://example.com/stripe/success", "cancel_url": "https://example.com/stripe/cancel"}
+{
+  "to": "0x12345...",
+  "currency": "jpy",
+  "success_url": "https://example.com/stripe/success",
+  "cancel_url": "https://example.com/stripe/cancel"
+}
 ```
 
 ### レスポンス
@@ -26,7 +31,11 @@ POST /nft/{address}/market/{token_id}/buy/stripe/session
 Status Code: 200
 
 {
-  "session_id": "cs_test_RqglKe3bb7HFB4CWSBSMEGX2jnSa8rfLGanivOnvlRcw4IweRjjQyoVJ"
+  "error": null,
+  "result": {
+    "stripe_session_id": "cs_test_XXX",
+    "stripe_public_key": "XXXX"
+  }
 }
 ```
 
@@ -39,4 +48,18 @@ curl -XPOST \
 -H 'X-Gobase-Access-Timestamp: 1589678198548' \
 -d '{"to": "0x12345...", "success_url": "https://example.com/stripe/success", "cancel_url": "https://example.com/stripe/cancel"}' \
 https://api.gobase.io/v1/nft/{0x12345...}/market/12/buy/eth/signature
+```
+
+### Stripe Javascriptサンプル
+```js
+<script src="https://js.stripe.com/v3"></script>
+
+<script>
+  var stripe = Stripe('{stripe_public_key}');
+  stripe.redirectToCheckout({
+    sessionId: '{stripe_session_id}'
+  }).then(function (result) {
+    console.log(result)
+  });
+</script>
 ```

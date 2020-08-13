@@ -12,12 +12,13 @@ GET /nft/{address}/tokens/list
 |  パラメータ    |  型              | 説明                       |
 | ------------ | ---------------- | ------------------------- |
 |  page        |  integer         | ページ番号、1からスタート     |
+|  per_page    |  integer         | 1ページの表示件数            |
 |  status      |  integer         | 状態設定                   |
 |  owner       |  string          | 所有者アドレス指定           |
 
 例：
 ```sh
-/nft/{address}/tokens/list?page=1&status=0&owner=0x12345...
+/nft/{address}/tokens/list?page=1&per_page=10&status=0&owner=0x12345...
 ```
 
 ### レスポンス
@@ -25,32 +26,35 @@ GET /nft/{address}/tokens/list
 Status Code: 200
 
 {
-  "list": [
-    {
-      "created": "2020-08-07T05:38:16.989Z",
-      "description": "test2",
-      "image": "https://example.com/image/nft2.png",
-      "name": "test2",
-      "owner": "0x12345...",
-      "status": null,
-      "token_id": 14,
-      "updated": "2020-08-07T05:38:16.989Z",
-      "wei": null
-    },
-    {
-      "created": "2020-08-07T05:38:17.020Z",
-      "description": "test1",
-      "image": "https://example.com/image/nft1.png",
-      "name": "test1",
-      "owner": "0x54321...",
-      "status": null,
-      "token_id": 13,
-      "updated": "2020-08-07T05:38:17.020Z",
-      "wei": null
-    }
-  ],
+  "result": {
+    "list": [
+      {
+        "created": "2020-08-07T05:38:16.989Z",
+        "description": "test2",
+        "image": "https://example.com/image/nft2.png",
+        "name": "test2",
+        "owner": "0x12345...",
+        "status": null,
+        "token_id": 14,
+        "updated": "2020-08-07T05:38:16.989Z",
+        "wei": null
+      },
+      {
+        "created": "2020-08-07T05:38:17.020Z",
+        "description": "test1",
+        "image": "https://example.com/image/nft1.png",
+        "name": "test1",
+        "owner": "0x54321...",
+        "status": null,
+        "token_id": 13,
+        "updated": "2020-08-07T05:38:17.020Z",
+        "wei": null
+      }
+    ],
+  },
   "total_count": 2,
-  "total_page": 1
+  "total_page": 1,
+  "error": null
 }
 ```
 
@@ -61,5 +65,5 @@ curl -XGET \
 -H 'X-Gobase-Access-Key: ******' \
 -H 'X-Gobase-Access-Signature: ******' \
 -H 'X-Gobase-Access-Timestamp: 1589678198548' \
-https://api.gobase.io/v1/nft/{0x12345...}/tokens/list?page=1&status=0&owner=0x54321...
+https://api.gobase.io/v1/nft/{0x12345...}/tokens/list?page=1&per_page=10&status=0&owner=0x54321...
 ```
