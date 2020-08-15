@@ -1,6 +1,6 @@
-# ETH購入時のSignature取得
+# Stripeセッション取得
 
-ETH購入時のSignature取得
+Stripeセッション取得
 
 ### パス
 ```
