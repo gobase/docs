@@ -4,7 +4,7 @@ NFT配布、所有者変更API
 
 ### パス
 ```
-POST /nft/{address}/market/{token_id}/publisher/transfer
+POST /v1/nft/market/{address}/tokens/{token_id}/publisher/transfer
 ```
 
 ### パラメータ
@@ -16,7 +16,10 @@ POST /nft/{address}/market/{token_id}/publisher/transfer
 
 例：
 ```json
-{"from": "0x12345...", "to": "0x54321..."}
+{
+  "from": "0x12345...",
+  "to": "0x54321..."
+}
 ```
 
 ### レスポンス
@@ -26,7 +29,7 @@ Status Code: 200
 {
   "error": null,
   "result": {
-    "tx_hash": "0xABC..."
+    "tx_hash": "0xf6e0f181023..."
   }
 }
 ```
@@ -37,7 +40,7 @@ curl -XPOST \
 -H 'Content-Type:application/json' \
 -H 'X-Gobase-Access-Key: ******' \
 -H 'X-Gobase-Access-Signature: ******' \
--H 'X-Gobase-Access-Timestamp: 1589678198548' \
+-H 'X-Gobase-Access-Timestamp: ******' \
 -d '{"from": "0x12345...", "to": "0x54321..."}' \
-https://api.gobase.io/v1/nft/{0x12345...}/market/12/publisher/transfer
+https://api.gobase.io/v1/nft/market/{address}/tokens/{token_id}/publisher/transfer
 ```

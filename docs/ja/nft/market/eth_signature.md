@@ -36,7 +36,7 @@ https://api.gobase.io/v1/nft/{0x12345...}/market/12/buy/eth/signature
 ```
 
 ### Signatureによる購入JSサンプル
-```js
+```
   const {web3, account} = await setupWeb3();
   const nftContractAddress = '{nft_contract_address}';
   const message = '{message}';

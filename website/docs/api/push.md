@@ -4,7 +4,7 @@ Push Notification API
 
 ### PATH
 ```
-POST /push/send
+POST /v1/push/send
 ```
 
 ### Parameters
@@ -44,7 +44,7 @@ Status Code: 200
 ```
 
 ### CURL Example
-```js
+```
 curl -XPOST \
 -H 'Content-Type:application/json' \
 -H 'X-Gobase-Access-Key: ******' \

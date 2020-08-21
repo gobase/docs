@@ -4,7 +4,7 @@ NFTの返品処理
 
 ### パス
 ```
-POST /nft/{address}/market/{token_id}/publisher/refund
+POST /v1/nft/market/{address}/tokens/{token_id}/publisher/refund
 ```
 
 ### パラメータ
@@ -25,7 +25,8 @@ Status Code: 200
 {
   "error": null,
   "result": {
-    "message":"OK"
+    "message": "success",
+    "tx_hash": "0xc2e3a5663836bb60975ba21adf..."
   }
 }
 ```
@@ -36,7 +37,7 @@ curl -XPOST \
 -H 'Content-Type:application/json' \
 -H 'X-Gobase-Access-Key: ******' \
 -H 'X-Gobase-Access-Signature: ******' \
--H 'X-Gobase-Access-Timestamp: 1589678198548' \
+-H 'X-Gobase-Access-Timestamp: ******' \
 -d '{"tx_hash": "0x12345..."}' \
-https://api.gobase.io/v1/nft/{0x12345}/market/{12}/publisher/refund
+https://api.gobase.io/v1/nft/market/{address}/tokens/{token_id}/publisher/refund
 ```

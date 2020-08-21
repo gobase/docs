@@ -44,7 +44,7 @@ Status Code: 200
 ```
 
 ### CURL 예시
-```js
+```
 curl -XPOST \
 -H 'Content-Type:application/json' \
 -H 'X-Gobase-Access-Key: ******' \

@@ -4,7 +4,7 @@ Stripeセッション取得
 
 ### パス
 ```
-POST /nft/{address}/market/{token_id}/buy/stripe/session
+POST /v1/nft/market/{address}/tokens/{token_id}/buy/stripe
 ```
 
 ### パラメータ
@@ -13,6 +13,7 @@ POST /nft/{address}/market/{token_id}/buy/stripe/session
 | ------------ | ---------------- | ------------------------------------- |
 |  to          |  string          | 購入者ETHアドレス                       |
 |  currency    |  string          | usd, jpy                              |
+|  amount      |  string          | 金額を指定                              |
 |  success_url |  string          | Stripe決済成功後のリダイレクトURL   　　　 |
 |  cancel_url  |  string          | Stripe決済キャンセル時のリダイレクトURL    |
 
@@ -21,6 +22,7 @@ POST /nft/{address}/market/{token_id}/buy/stripe/session
 {
   "to": "0x12345...",
   "currency": "jpy",
+  "amount": "1000",
   "success_url": "https://example.com/stripe/success",
   "cancel_url": "https://example.com/stripe/cancel"
 }
@@ -33,8 +35,8 @@ Status Code: 200
 {
   "error": null,
   "result": {
-    "stripe_session_id": "cs_test_XXX",
-    "stripe_public_key": "XXXX"
+    "stripe_public_key": "XXXX",
+    "stripe_session_id": "cs_test_XXX"
   }
 }
 ```
@@ -47,7 +49,7 @@ curl -XPOST \
 -H 'X-Gobase-Access-Signature: ******' \
 -H 'X-Gobase-Access-Timestamp: 1589678198548' \
 -d '{"to": "0x12345...", "success_url": "https://example.com/stripe/success", "cancel_url": "https://example.com/stripe/cancel"}' \
-https://api.gobase.io/v1/nft/{0x12345...}/market/12/buy/eth/signature
+https://api.gobase.io/v1/nft/market/{address}/tokens/{token_id}/buy/stripe
 ```
 
 ### Stripe Javascriptサンプル
@@ -55,7 +57,7 @@ https://api.gobase.io/v1/nft/{0x12345...}/market/12/buy/eth/signature
 <script src="https://js.stripe.com/v3"></script>
 
 <script>
-  var stripe = Stripe('{stripe_public_key}');
+  const stripe = Stripe('{stripe_public_key}');
   stripe.redirectToCheckout({
     sessionId: '{stripe_session_id}'
   }).then(function (result) {

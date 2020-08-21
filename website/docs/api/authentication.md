@@ -11,7 +11,7 @@ Include the following information in your HTTP request headers.
 `X-Gobase-Access-Signature` is the result of concatenating TIMESTAMP, HTTP method, Request path, and Request body as strings, and signing HMAC-SHA256 with API secret.
 
 ### Example for nodejs
-```js
+```
 const request = require('request');
 const crypto = require('crypto');
 

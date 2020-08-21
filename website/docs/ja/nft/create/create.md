@@ -4,7 +4,7 @@ NFT作成するAPI
 
 ### パス
 ```
-POST /nft/{address}/tokens/create/bulk
+POST /v1/nft/create/{address}/tokens
 ```
 
 ### パラメータ
@@ -36,8 +36,10 @@ POST /nft/{address}/tokens/create/bulk
 Status Code: 200
 
 {
-  "result": "OK",
-  "error": null
+  "error":null,
+  "result": {
+    "message":"success"
+  }
 }
 ```
 
@@ -47,7 +49,7 @@ curl -XPOST \
 -H 'Content-Type:application/json' \
 -H 'X-Gobase-Access-Key: ******' \
 -H 'X-Gobase-Access-Signature: ******' \
--H 'X-Gobase-Access-Timestamp: 1589678198548' \
--d '{"name": "", "point": 100}' \
-https://api.gobase.io/v1/nft/{0x12345}/tokens/create/bulk
+-H 'X-Gobase-Access-Timestamp: ******' \
+-d '[{"name": "NFT Name", "description": "NFT Description", "image": "https://example.com/images/nft1.png"}]' \
+https://api.gobase.io/v1/nft/create/{address}/tokens
 ```

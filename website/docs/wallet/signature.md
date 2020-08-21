@@ -18,7 +18,7 @@ laod web3.js
 
 setup web3 from provider and create signature
 
-```js
+```
 // js/main.js
 async function setupWeb3() {
   try {

@@ -17,7 +17,7 @@
 
 从Provider生成web3，并做签名
 
-```js
+```
 // js/main.js
 async function setupWeb3() {
   try {

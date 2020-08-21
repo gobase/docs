@@ -1,6 +1,6 @@
 # HTTP API
 
-Endpoint URL: `https://api.gobase.io/v1/`
+Endpoint URL: `https://api.gobase.io`
 
 Authentication is required for the HTTP API. For more information on please see [Authentication](authentication) page.
 

@@ -4,7 +4,7 @@ Push 알림 API는 DApps 측에서 지정한 Ehtereum 주소에 대해 Push 알�
 
 ### PATH
 ```
-POST /push/send
+POST /v1/push/send
 ```
 
 ### 변수
@@ -44,7 +44,7 @@ Status Code: 200
 ```
 
 ### CURL 예시
-```js
+```
 curl -XPOST \
 -H 'Content-Type:application/json' \
 -H 'X-Gobase-Access-Key: ******' \

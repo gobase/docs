@@ -6,7 +6,7 @@ GP授予API是向指定的多个Ethereum地址授予GP的API。
 
 ### PATH
 ```
-POST /point/send
+POST /v1/point/send
 ```
 
 ### 参数

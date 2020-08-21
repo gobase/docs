@@ -1,6 +1,6 @@
 # 发送交易
 发送交易例子
-```js
+```
 // js/main.js
 async function sendTransaction(to, eth, callback) {
   try {

@@ -51,7 +51,7 @@ https://api.gobase.io/v1/nft/{0x12345...}/market/12/buy/eth/signature
 ```
 
 ### Stripe Javascriptサンプル
-```js
+```
 <script src="https://js.stripe.com/v3"></script>
 
 <script>

@@ -18,7 +18,7 @@ laod web3.js
 ```
 
 setup web3 from provider and create signature
-```js
+```
 // js/main.js
 async function setupWeb3() {
   try {
@@ -73,7 +73,7 @@ async function personalSign() {
 
 ## Send transaction
 Send transaction example
-```js
+```
 // js/main.js
 async function sendTransaction(to, eth, callback) {
   try {

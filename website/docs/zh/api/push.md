@@ -4,7 +4,7 @@ APP推送API是向DApps端指定的多个Ethereum地址发送推送的API。
 
 ### PATH
 ```
-POST /push/send
+POST /v1/push/send
 ```
 
 ### 参数
@@ -44,7 +44,7 @@ Status Code: 200
 ```
 
 ### CURL 例子
-```js
+```
 curl -XPOST \
 -H 'Content-Type:application/json' \
 -H 'X-Gobase-Access-Key: ******' \

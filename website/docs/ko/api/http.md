@@ -1,6 +1,6 @@
 # HTTP API
 
-단점 URL: `https://api.gobase.io/v1/`
+단점 URL: `https://api.gobase.io`
 
 HTTP API는 인증이 필요합니다. 인증에 관해서는 [API인증 페이지](authentication) 를 보시길 바랍니다.
 

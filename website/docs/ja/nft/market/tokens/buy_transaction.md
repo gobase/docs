@@ -4,7 +4,7 @@ ETH購入時Transaction情報を送信
 
 ### パス
 ```
-POST /nft/{address}/market/{token_id}/buy/eth/transaction
+POST /v1/nft/market/{address}/tokens/{token_id}/buy/transaction
 ```
 
 ### パラメータ
@@ -15,7 +15,9 @@ POST /nft/{address}/market/{token_id}/buy/eth/transaction
 
 例：
 ```json
-{"tx_hash": "0x12345..."}
+{
+  "tx_hash": "0x12345..."
+}
 ```
 
 ### レスポンス
@@ -25,7 +27,7 @@ Status Code: 200
 {
   "error": null,
   "result": {
-    "message": "0x12345..."
+    "message": "success"
   }
 }
 ```
@@ -36,7 +38,7 @@ curl -XPOST \
 -H 'Content-Type:application/json' \
 -H 'X-Gobase-Access-Key: ******' \
 -H 'X-Gobase-Access-Signature: ******' \
--H 'X-Gobase-Access-Timestamp: 1589678198548' \
+-H 'X-Gobase-Access-Timestamp: ******' \
 -d '{"tx_hash": "0x12345..."}' \
-https://api.gobase.io/v1/nft/{0x12345}//market/{token_id}/buy/eth/transaction
+https://api.gobase.io/v1/nft/market/{address}/tokens/{token_id}/buy/transaction
 ```

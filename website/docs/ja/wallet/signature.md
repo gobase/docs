@@ -19,7 +19,7 @@ web3.jsを読み込みます。
 
 プロバイダーからweb3を生成して署名処理を行う。
 
-```js
+```
 // js/main.js
 async function setupWeb3() {
   try {
