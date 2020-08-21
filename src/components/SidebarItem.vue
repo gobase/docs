@@ -48,6 +48,12 @@
           >{{ link.title }}</uni-link
         >
         <PageToc :link="link" />
+        <sidebar-item
+          v-if="link.children"
+          :item="link"
+          :open="closedItems.indexOf(index) === -1"
+          @toggle="toggleItem(index)"
+        />
       </div>
     </div>
   </div>

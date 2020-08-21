@@ -39,6 +39,6 @@ curl -XGET \
 -H 'Content-Type:application/json' \
 -H 'X-Gobase-Access-Key: ******' \
 -H 'X-Gobase-Access-Signature: ******' \
--H 'X-Gobase-Access-Timestamp: 1589678198548' \
+-H 'X-Gobase-Access-Timestamp: ******' \
 https://api.gobase.io/v1/nft/assets/{address}/tokens/{token_id}
 ```

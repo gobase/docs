@@ -12,7 +12,7 @@
 下の例を参考してください。
 
 ### Nodejsサンプル
-```
+```js
 const request = require('request');
 const crypto = require('crypto');
 
