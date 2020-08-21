@@ -11,7 +11,7 @@
 `X-Gobase-Access-Signature`은 TIMESTAMP, HTTP 메소드, 요청 경로 응답 본문을 문자열로 연결 한 것을, API secret에서 HMAC-SHA256 서명을 한 결과입니다.
 
 ### nodejs 예
-```
+```js
 const request = require('request');
 const crypto = require('crypto');
 

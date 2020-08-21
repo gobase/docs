@@ -11,7 +11,7 @@
 `X-Gobase-Access-Signature` 是将TIMESTAMP、HTTP方法、请求路径和请求体作为字符串串串联起来，然后用API的秘密签署HMAC-SHA256。
 
 ### Nodejs 例子
-```
+```js
 const request = require('request');
 const crypto = require('crypto');
 
