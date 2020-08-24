@@ -6,7 +6,7 @@ GP 부여 API는 지정한 Ethereum 주소에 GP를 부여하는 API입니다.
 
 ### PATH
 ```
-POST /point/send
+POST /v1/point/send
 ```
 
 ### 변수

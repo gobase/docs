@@ -4,7 +4,7 @@ APP推送API是向DApps端指定的多个Ethereum地址发送推送的API。
 
 ### PATH
 ```
-POST /push/send
+POST /v1/push/send
 ```
 
 ### 参数

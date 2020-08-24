@@ -4,7 +4,7 @@
 
 ### パス
 ```
-POST /push/send
+POST /v1/push/send
 ```
 
 ### パラメータ

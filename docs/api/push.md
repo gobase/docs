@@ -4,7 +4,7 @@ Push Notification API
 
 ### PATH
 ```
-POST /push/send
+POST /v1/push/send
 ```
 
 ### Parameters

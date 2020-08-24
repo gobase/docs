@@ -1,6 +1,6 @@
 # HTTP API
 
-エンドポイント URL: `https://api.gobase.io/v1/`
+エンドポイント URL: `https://api.gobase.io`
 
 HTTP APIは認証が必須です。認証に関しては [認証ページ](authentication) をご覧ください。
 

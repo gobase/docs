@@ -6,4 +6,4 @@ cp -r website/dist/* docs/
 
 git add .
 git commit -m "build website"
-git push origin master
+git push stag master
