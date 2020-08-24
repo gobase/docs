@@ -172,101 +172,101 @@ new Docute({
             },
           ]
         },
-        // {
-        //   title: 'NFT',
-        //   children: [
-        //     {
-        //       title: 'トークン作成',
-        //       link: '/ja/nft/create/create.md'
-        //     },
-        //     {
-        //       title: 'トークンステータス一覧',
-        //       link: '/ja/nft/market/status'
-        //     }
-        //   ]
-        // },
-        // {
-        //   title: 'NFT-Token',
-        //   children: [
-        //     {
-        //       title: 'トークン一覧',
-        //       link: '/ja/nft/assets/tokens.md'
-        //     },
-        //     {
-        //       title: 'トークン詳細',
-        //       link: '/ja/nft/assets/tokens_show.md'
-        //     },
-        //     {
-        //       title: '出品',
-        //       link: '/ja/nft/market/tokens/publisher_sell_post'
-        //     },
-        //     {
-        //       title: '出品金額の変更',
-        //       link: '/ja/nft/market/tokens/publisher_sell_put'
-        //     },
-        //     {
-        //       title: 'トークン配布、所有者変更',
-        //       link: '/ja/nft/market/tokens/publisher_transfer'
-        //     },
-        //     {
-        //       title: '購入時署名取得',
-        //       link: '/ja/nft/market/tokens/buy_signature'
-        //     },
-        //     {
-        //       title: '購入時TxHash送信',
-        //       link: '/ja/nft/market/tokens/buy_transaction'
-        //     },
-        //     {
-        //       title: 'Stripe情報取得',
-        //       link: '/ja/nft/market/tokens/buy_stripe'
-        //     },
-        //     {
-        //       title: '返品、返金',
-        //       link: '/ja/nft/market/tokens/publisher_refund'
-        //     },
-        //   ]
-        // },
-        // {
-        //   title: 'NFT-Bundle',
-        //   children: [
-        //     {
-        //       title: 'バンドル一覧',
-        //       link: '/ja/nft/assets/bundles.md'
-        //     },
-        //     {
-        //       title: 'バンドル詳細',
-        //       link: '/ja/nft/assets/bundles_show.md'
-        //     },
-        //     {
-        //       title: '出品',
-        //       link: '/ja/nft/market/bundles/publisher_sell_post'
-        //     },
-        //     {
-        //       title: '出品金額の変更',
-        //       link: '/ja/nft/market/bundles/publisher_sell_put'
-        //     },
-        //     {
-        //       title: 'トークン配布、所有者変更',
-        //       link: '/ja/nft/market/bundles/publisher_transfer'
-        //     },
-        //     {
-        //       title: '購入時署名取得',
-        //       link: '/ja/nft/market/bundles/buy_signature'
-        //     },
-        //     {
-        //       title: '購入時TxHash送信',
-        //       link: '/ja/nft/market/bundles/buy_transaction'
-        //     },
-        //     {
-        //       title: 'Stripe情報取得',
-        //       link: '/ja/nft/market/bundles/buy_stripe'
-        //     },
-        //     {
-        //       title: '返品、返金',
-        //       link: '/ja/nft/market/bundles/publisher_refund'
-        //     },
-        //   ]
-        // }
+        {
+          title: 'NFT',
+          children: [
+            {
+              title: 'トークン作成',
+              link: '/ja/nft/create/create.md'
+            },
+            {
+              title: 'トークンステータス一覧',
+              link: '/ja/nft/market/status'
+            }
+          ]
+        },
+        {
+          title: 'NFT-Token',
+          children: [
+            {
+              title: 'トークン一覧',
+              link: '/ja/nft/assets/tokens.md'
+            },
+            {
+              title: 'トークン詳細',
+              link: '/ja/nft/assets/tokens_show.md'
+            },
+            {
+              title: 'トークン出品',
+              link: '/ja/nft/market/tokens/publisher_sell_post'
+            },
+            {
+              title: '出品金額の変更',
+              link: '/ja/nft/market/tokens/publisher_sell_put'
+            },
+            {
+              title: 'トークン配布、所有者変更',
+              link: '/ja/nft/market/tokens/publisher_transfer'
+            },
+            {
+              title: '購入時署名取得',
+              link: '/ja/nft/market/tokens/buy_signature'
+            },
+            {
+              title: '購入時TxHash送信',
+              link: '/ja/nft/market/tokens/buy_transaction'
+            },
+            {
+              title: 'Stripe情報取得',
+              link: '/ja/nft/market/tokens/buy_stripe'
+            },
+            {
+              title: '返品、返金',
+              link: '/ja/nft/market/tokens/publisher_refund'
+            },
+          ]
+        },
+        {
+          title: 'NFT-Bundle',
+          children: [
+            {
+              title: 'バンドル一覧',
+              link: '/ja/nft/assets/bundles.md'
+            },
+            {
+              title: 'バンドル詳細',
+              link: '/ja/nft/assets/bundles_show.md'
+            },
+            {
+              title: 'バンドル出品',
+              link: '/ja/nft/market/bundles/publisher_sell_post'
+            },
+            {
+              title: '出品金額の変更',
+              link: '/ja/nft/market/bundles/publisher_sell_put'
+            },
+            {
+              title: 'トークン配布、所有者変更',
+              link: '/ja/nft/market/bundles/publisher_transfer'
+            },
+            {
+              title: '購入時署名取得',
+              link: '/ja/nft/market/bundles/buy_signature'
+            },
+            {
+              title: '購入時TxHash送信',
+              link: '/ja/nft/market/bundles/buy_transaction'
+            },
+            {
+              title: 'Stripe情報取得',
+              link: '/ja/nft/market/bundles/buy_stripe'
+            },
+            {
+              title: '返品、返金',
+              link: '/ja/nft/market/bundles/publisher_refund'
+            },
+          ]
+        }
       ]
     },
     '/zh/': {
