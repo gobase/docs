@@ -180,13 +180,29 @@ new Docute({
               link: '/ja/nft/create/create.md'
             },
             {
+              title: '作成済トークン一覧',
+              link: '/ja/nft/publisher/tokens.md'
+            },
+            {
+              title: '作成済トークン詳細',
+              link: '/ja/nft/publisher/tokens_show.md'
+            },
+            {
+              title: '作成済バンドル一覧',
+              link: '/ja/nft/publisher/bundles.md'
+            },
+            {
+              title: '作成済バンドル詳細',
+              link: '/ja/nft/publisher/bundles_show.md'
+            },
+            {
               title: 'トークンステータス一覧',
               link: '/ja/nft/market/status'
             }
           ]
         },
         {
-          title: 'NFT-Token',
+          title: 'Market-Token',
           children: [
             {
               title: 'トークン一覧',
@@ -227,7 +243,7 @@ new Docute({
           ]
         },
         {
-          title: 'NFT-Bundle',
+          title: 'Market-Bundle',
           children: [
             {
               title: 'バンドル一覧',
