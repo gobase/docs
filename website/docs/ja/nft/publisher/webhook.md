@@ -6,7 +6,7 @@ Webhook URLと認証キーは [開発者ページ](https://developer.gobase.io) 
 
 ### webhook request parameter
 1. NFT作成後
-```
+```json
 {
   "event": "create",
   "address": {address},
@@ -18,7 +18,7 @@ Webhook URLと認証キーは [開発者ページ](https://developer.gobase.io) 
 ```
 
 2. 所有者変更後
-```
+```json
 {
   "event": "transfer",
   "address": {address},
