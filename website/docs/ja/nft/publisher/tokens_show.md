@@ -25,7 +25,7 @@ Status Code: 200
       "name": "NFT1",
       "owner": "0x9D7Fa65552609eDF74417485D80613da5eC09Fe5",
       "status": 2,
-      "token_id": 107,
+      "token_id": "107",
       "updated": "2020-08-16T23:49:37.889Z",
       "wei": "567000000000000000"
     }

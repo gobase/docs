@@ -37,7 +37,7 @@ Status Code: 200
           "image": "https://example.com/image/nft1.png",
           "name": "NFT1"
         },
-        "token_id": 107,
+        "token_id": "107",
         "tx_hash_buy": null,
         "tx_hash_refund": null,
         "tx_hash_sell": null,
@@ -53,7 +53,7 @@ Status Code: 200
           "image": "https://example.com/image/nft2.png",
           "name": "NFT2"
         },
-        "token_id": 108,
+        "token_id": "108",
         "tx_hash_buy": null,
         "tx_hash_refund": null,
         "tx_hash_sell": null,

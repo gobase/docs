@@ -35,7 +35,7 @@ Status Code: 200
         "name": "test2",
         "owner": "0x12345...",
         "status": null,
-        "token_id": 14,
+        "token_id": "14",
         "updated": "2020-08-07T05:38:16.989Z",
         "wei": null
       },
@@ -46,7 +46,7 @@ Status Code: 200
         "name": "test1",
         "owner": "0x54321...",
         "status": null,
-        "token_id": 13,
+        "token_id": "13",
         "updated": "2020-08-07T05:38:17.020Z",
         "wei": null
       }
