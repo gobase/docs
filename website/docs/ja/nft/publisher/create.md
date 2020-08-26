@@ -14,6 +14,7 @@ POST /v1/nft/create/{address}/tokens
 |  name        |  string          | NFT名前              |
 |  description |  string          | NFT説明文            |
 |  image       |  string          | 画像ファイルURL       |
+|  mapping_id  |  string          | マッピング用ID        |
 
 例：
 ```json
@@ -21,12 +22,14 @@ POST /v1/nft/create/{address}/tokens
   {
     "name": "NFT Name",
     "description": "NFT Description",
-    "image": "https://example.com/images/nft1.png"
+    "image": "https://example.com/images/nft1.png",
+    "mapping_id": "t123"
   },
   {
     "name": "NFT Name2",
     "description": "NFT Description2",
-    "image": "https://example.com/images/nft2.png"
+    "image": "https://example.com/images/nft2.png",
+    "mapping_id": "t456"
   }
 ]
 ```
