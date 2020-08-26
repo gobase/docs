@@ -177,23 +177,27 @@ new Docute({
           children: [
             {
               title: 'トークン作成',
-              link: '/ja/nft/create/create.md'
+              link: '/ja/nft/publisher/create'
             },
             {
               title: '作成済トークン一覧',
-              link: '/ja/nft/publisher/tokens.md'
+              link: '/ja/nft/publisher/tokens'
             },
             {
               title: '作成済トークン詳細',
-              link: '/ja/nft/publisher/tokens_show.md'
+              link: '/ja/nft/publisher/tokens_show'
             },
             {
               title: '作成済バンドル一覧',
-              link: '/ja/nft/publisher/bundles.md'
+              link: '/ja/nft/publisher/bundles'
             },
             {
               title: '作成済バンドル詳細',
-              link: '/ja/nft/publisher/bundles_show.md'
+              link: '/ja/nft/publisher/bundles_show'
+            },
+            {
+              title: 'Webhook',
+              link: '/ja/nft/publisher/webhook'
             },
             {
               title: 'トークンステータス一覧',
