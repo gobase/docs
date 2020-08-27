@@ -1,6 +1,6 @@
-# NFT一覧取得
+# Bundle一覧取得
 
-NFT一覧取得API
+Bundle一覧取得API
 
 ### パス
 ```
