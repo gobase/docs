@@ -34,8 +34,8 @@ Status Code: 200
         "created": "2020-08-18T02:25:03.255Z",
         "owner": "0x0eb2F75e2D467e4604235e99E28b2fF4E4C2ec61",
         "token_ids": [
-          110,
-          111
+          "110",
+          "111"
         ],
         "tx_hash_buy": null,
         "tx_hash_refund": null,
@@ -48,9 +48,9 @@ Status Code: 200
         "created": "2020-08-17T01:31:07.189Z",
         "owner": "0x0eb2F75e2D467e4604235e99E28b2fF4E4C2ec61",
         "token_ids": [
-          103,
-          104,
-          105
+          "103",
+          "104",
+          "105"
         ],
         "tx_hash_buy": null,
         "tx_hash_refund": null,

@@ -51,9 +51,9 @@ Status Code: 200
         "wei": null
       }
     ],
+    "total_count": 2,
+    "total_page": 1
   },
-  "total_count": 2,
-  "total_page": 1,
   "error": null
 }
 ```

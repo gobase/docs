@@ -21,9 +21,9 @@ Status Code: 200
     "owner": "0x0eb2F75e2D467e4604235e99E28b2fF4E4C2ec61",
     "signature": "0xd6b3f425c4c6f318e98cddc2db42afd60569f52d0c8a127e1cd8cda7d232b310",
     "token_ids": [
-      164,
-      165,
-      166
+      "164",
+      "165",
+      "166"
     ],
     "wei": "567000000000000000"
   }
