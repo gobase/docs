@@ -16,6 +16,7 @@ X-Gobase-Webhook-Credential: {Credential}
 ```json
 {
   "event": "create",
+  "status": "success | failure",
   "address": {address},
   "token_id": {token_id},
   "mapping_id": {mapping_id},
@@ -30,6 +31,7 @@ X-Gobase-Webhook-Credential: {Credential}
 ```json
 {
   "event": "transfer",
+  "status": "success | failure",
   "address": {address},
   "token_id": {token_id},
   "mapping_id": {mapping_id},
