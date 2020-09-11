@@ -17,7 +17,7 @@ web3.js를로드
 
 Provider로 web3를 생성하고 서명 처리를한다.
 
-```
+```js
 // js/main.js
 async function setupWeb3() {
   try {

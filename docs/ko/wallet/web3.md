@@ -19,7 +19,7 @@ web3.js를로드
 
 Provider로 web3를 생성하고 서명 처리를한다.
 
-```
+```js
 // js/main.js
 async function setupWeb3() {
   try {
@@ -74,7 +74,7 @@ async function personalSign() {
 
 ## 송금
 송금예
-```
+```js
 // js/main.js
 async function sendTransaction(to, eth, callback) {
   try {

@@ -2,7 +2,7 @@
 
 Send transaction example
 
-```
+```js
 // js/main.js
 async function sendTransaction(to, eth, callback) {
   try {
