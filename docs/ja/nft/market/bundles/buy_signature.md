@@ -45,14 +45,15 @@ https://api.gobase.io/v1/nft/market/{address}/bundles/{bundle_id}/buy/signature
   const {web3, account} = await setupWeb3();
   const nftContractAddress = '{nft_contract_address}';
   const signature = '{signature}';
-  const tokenId = '{token_id}';
+  const tokenIds = [token_ids];
   const owner = '{owner}';
   const wei = '{wei}';
 
   const marketContractABI = [{"inputs":[],"payable":false, ....}];
   const marketContractAddress = '{market_contract_address}';
   const marketContract = new web3.eth.Contract(marketContractABI, marketContractAddress);
-  marketContract.methods.purchaseTokenByETH(signature, nftContractAddress, tokenId, owner).send(
+
+  marketContract.methods.purchaseBundleByETH(signature, nftContractAddress, tokenIds, owner).send(
     {
       from: account,
       value: wei,
@@ -62,7 +63,7 @@ https://api.gobase.io/v1/nft/market/{address}/bundles/{bundle_id}/buy/signature
     } else {
       // TODO
       // tx_hashをサーバーに送信して、GO BASEに送信
-      // 「ETHトランザクション情報送信」参照
+      // 「Market Bundle - 購入時TxHash送信」参照
     }
   });
 ```

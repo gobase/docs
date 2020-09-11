@@ -1,6 +1,6 @@
-# NFT出品
+# Bundle出品
 
-NFT出品するAPI
+Bundle出品するAPI
 
 ### パス
 ```
