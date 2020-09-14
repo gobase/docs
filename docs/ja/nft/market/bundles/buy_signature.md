@@ -25,7 +25,9 @@ Status Code: 200
       "165",
       "166"
     ],
-    "wei": "567000000000000000"
+    "wei": "567000000000000000",
+    "market_contract_address": "0x******",
+    "market_contract_abi": "[{\"inputs\":[],\"payable\":false,\"stateMutability\":  .... \"function\"}]"
   }
 }
 ```

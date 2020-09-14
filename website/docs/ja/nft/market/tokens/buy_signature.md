@@ -21,7 +21,9 @@ Status Code: 200
     "owner": "0x0eb2F75e2D467e4604235e99E28b2fF4E4C2ec61",
     "signature": "0x8670784ca7cd2375e705b39c622b8ae79951f6cea19acfb185a3f45137199806",
     "token_id": "107",
-    "wei": "567000000000000000"
+    "wei": "567000000000000000",
+    "market_contract_address": "0x******",
+    "market_contract_abi": "[{\"inputs\":[],\"payable\":false,\"stateMutability\":  .... \"function\"}]"
   }
 }
 ```
