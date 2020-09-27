@@ -11,6 +11,7 @@ POST /v1/push/send
 
 |  パラメータ    |  型              | 説明                               |
 | ------------ | ---------------- | --------------------------------- |
+|  request_id  |  string          | リクエストIDを指定                   |
 |  addresses   |  string array    | 複数アドレスの配列形式                |
 |  title       |  object          | json形式で lang, text objectの配列  |
 |  body        |  object          | json形式で lang, text objectの配列  |
@@ -18,6 +19,7 @@ POST /v1/push/send
 例:
 ```json
 {
+	"request_id": "xxxxxxxxx",
 	"title": [{
 		"lang": "en",
 		"text": "title"
