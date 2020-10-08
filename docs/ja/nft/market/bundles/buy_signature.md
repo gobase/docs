@@ -55,10 +55,12 @@ https://api.gobase.io/v1/nft/market/{address}/bundles/{bundle_id}/buy/signature
   const marketContractAddress = '{market_contract_address}';
   const marketContract = new web3.eth.Contract(marketContractABI, marketContractAddress);
 
+  const estimateGas = await marketContract.methods.purchaseBundleByETH(signature, nftContractAddress, tokenIds, owner).estimateGas({from: account, value: wei})
   marketContract.methods.purchaseBundleByETH(signature, nftContractAddress, tokenIds, owner).send(
     {
       from: account,
       value: wei,
+      gas: estimateGas,
     }, (err, tx_hash) => {
     if (err) {
       console.log(err);
