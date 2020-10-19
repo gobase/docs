@@ -1,6 +1,6 @@
 # Fiat API
 
-## Sessionリクエスト
+## Session
 
 Fiatで購入するAPI
 
@@ -60,7 +60,7 @@ curl -XPOST \
 https://api.gobase.io/v1/fiat/session
 ```
 
-## Webhook API
+## Webhook
 決済が成功するとwebhookで通知される。webhook URLと認証情報は https://developer.gobase.io で登録。
 
 ### webhook header
