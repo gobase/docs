@@ -1,5 +1,7 @@
 # Fiat API
 
+## Sessionリクエスト
+
 Fiatで購入するAPI
 
 ### パス
