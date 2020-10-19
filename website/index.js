@@ -167,6 +167,10 @@ new Docute({
               link: '/ja/api/push'
             },
             {
+              title: 'Fiat',
+              link: '/ja/api/fiat'
+            },
+            {
               title: 'ステータスコード',
               link: '/ja/api/code'
             },
