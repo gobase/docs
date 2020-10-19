@@ -26,13 +26,13 @@ POST /v1/fiat/session
 ```json
 {
 	"logo_image_url": "https://example.com/images/dapp_logo.png",
-  "item_name": "GUM",
-  "item_value": 100,
-  "jpy_value": 1100,
-  "tax_included": true,
-  "user_address": "0x1234",
-  "success_url": "https://example.com/fiat/success",
-  "cancel_url": "https://example.com/fiat/cancel",
+	"item_name": "GUM",
+	"item_value": 100,
+	"jpy_value": 1100,
+	"tax_included": true,
+	"user_address": "0x1234",
+	"success_url": "https://example.com/fiat/success",
+	"cancel_url": "https://example.com/fiat/cancel",
 }
 ```
 
@@ -48,7 +48,7 @@ Status Code: 200
 ```
 
 ### CURLサンプル
-```
+```sh
 curl -XPOST \
 -H 'Content-Type:application/json' \
 -H 'X-Gobase-Access-Key: ******' \
@@ -72,10 +72,10 @@ https://api.gobase.io/v1/fiat/session
 {
 	"order_name": "go_xxxx",
 	"nonce": 1,
-  "user_address": "0x1234",
-  "item_name": "GUM",
-  "item_value": 100,
-  "jpy_value": 1100,
-  "tax_included": true,
+	"user_address": "0x1234",
+	"item_name": "GUM",
+	"item_value": 100,
+	"jpy_value": 1100,
+	"tax_included": true,
 }
 ```
