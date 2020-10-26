@@ -61,12 +61,12 @@ https://api.gobase.io/v1/fiat/session
 ```
 
 ## Webhook
-決済が成功するとwebhookで通知される。webhook URLと認証情報は https://developer.gobase.io で登録。
+決済が成功するとWebhookで通知される。Webhook URLとHTTPヘッダーの認証情報は https://developer.gobase.io のDappsで登録。
 
 ### webhook header
 ```json
 "Content-Type": "application/json"
-"X-Gobase-Webhook-Credential": "xxxxxxx"
+"X-Gobase-Authorization": "xxxxxxx"
 ```
 
 ### webhook parameter
