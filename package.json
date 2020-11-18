@@ -45,15 +45,15 @@
     "html-template-tag": "^2.0.0",
     "husky": "^1.0.1",
     "lint-staged": "^7.3.0",
-    "poi": "^12.4.8",
+    "poi": "^12.10.3",
     "postcss-import": "^12.0.0",
     "postcss-preset-env": "^6.0.3",
     "power-assert": "^1.6.1",
     "rollup-plugin-vue": "^4.3.2",
-    "semantic-release": "^15.12.0",
-    "vue-compile": "^0.3.1",
+    "semantic-release": ">=17.2.3",
+    "vue-compile": "^0.6.2",
     "webpack-node-externals": "^1.7.2",
-    "xo": "^0.23.0"
+    "xo": "^0.34.2"
   },
   "repository": {
     "url": "egoist/docute",
