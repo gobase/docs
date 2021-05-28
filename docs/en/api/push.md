@@ -2,14 +2,14 @@
 
 Push Notification API
 
-### PATH
+### Path
 ```
 POST /v1/push/send
 ```
 
 ### Parameters
 
-|  Parameter    |  Type           | Description                                 |
+|  Parameter   |  Type            | Description                                 |
 | ------------ | ---------------- | ------------------------------------------- |
 |  addresses   |  string array    | address array format                        |
 |  title       |  object          | Array of lang, text objects in json format  |

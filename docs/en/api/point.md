@@ -4,7 +4,7 @@ GP = GO!Wallet Point
 
 The GP granting API is an API that grants GP to the specified Ethereum address.
 
-### PATH
+### Path
 ```
 POST /v1/point/send
 ```

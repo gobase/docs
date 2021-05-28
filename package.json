@@ -74,7 +74,7 @@
       "rem",
       "plugin:vue/essential"
     ],
-    "prettier": true,
+    "prettier": false,
     "ignores": [
       "**/website/**",
       "**/dist/**"
@@ -102,7 +102,6 @@
   },
   "lint-staged": {
     "*.{js,css,md,vue}": [
-      "xo --fix",
       "git add"
     ]
   },
